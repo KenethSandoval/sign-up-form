@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Learn to code by watching others</h1>
+
+      <p id="description">
+        See how experienced developers solve problems in real-time Watching scripted tuttorials is great, but understanding how developers think is invaluable.
+      </p>
+    </header>
+  
+  <main>
+      <div class="try_free">
+        <p>
+          <span class="days_free">Try it free 7 days </span> then $20/mo.thereafter
+        </p>
+      </div>
+
+      <form id="formFreeTrial">
+        <div class="form-control">
+          <input 
+            autocomplete="off"
+            id="firstName"
+            placeholder="First Name"
+            required
+            type="text" />
+
+          <span class="error"></span>
+          <img id="iconErrorName" class="iconErrorDisable" src="images/icon-error.svg" alt="Error"> 
+        </div>
+        <div class="form-control">
+          <input 
+            id="lastName"
+            placeholder="Last Name"
+            required
+            type="text" />
+         
+          <span class="error"></span>
+          <img id="iconErrorLastName" class="iconErrorDisable" src="images/icon-error.svg" alt="Error"> 
+        </div>
+        <div class="form-control">
+          <input 
+            id="email"
+            placeholder="Email Address"
+            required
+            type="email" />
+          
+          <span class="error"></span>
+          <img id="iconErrorEmail" class="iconErrorDisable" src="images/icon-error.svg" alt="Error"> 
+        </div>
+        <div class="form-control">
+          <input 
+            id="password"
+            minlength="6"
+            placeholder="Password"
+            required
+            type="password" /> 
+          <span class="error"></span>
+          <img id="iconErrorPassword" class="iconErrorDisable" src="images/icon-error.svg" alt="Error"> 
+        </div>
+
+        <button id="buttonSubmit">Claim your free trial</button>
+
+        <span class="action">
+          By clicking the button, you are agreeing to our
+          <span class="terms">Terms and Services</span>
+        </span>
+      </form>
+  </main>
+  </div>
+
+ <script src="index.js"></script>
+</body>
+</html>
